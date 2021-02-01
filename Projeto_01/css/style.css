@@ -33,6 +33,11 @@ html, body {
     align-items: center;
     justify-content: center;
     margin: 3px 50px;
+    border-bottom: 1px solid red;
+}
+
+.center > .h3 {
+    border-bottom: 1px solid rgba(255, 0, 0, 0.26);
 }
 
 .header {
@@ -113,14 +118,23 @@ html, body {
     margin-top: 10px;
     width: 344px;
     height: 55px;
+    padding: 8px 10px 8px 10px;
     border: 1px solid rgba(192, 116, 160, 0.253);
     border-radius: 8px;
     
 }
 
+.input-container input[type=text] {
+    outline: 0;
+}
+
+
 /* Submit */
 .form .input-submit-container{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .form input[type=submit] {
@@ -245,14 +259,28 @@ html, body {
 }
 
 .container-single img {
-    width: 155px;
-    height: 170px;
-    border: 1px solid rgba(0, 0, 0, 0.335);
+    width: 100px;
+    height: 120px;
+    border: 1px solid rgba(228, 228, 228, 0.986);
     border-radius: 8%;
-    box-shadow: 10px -15px rgba(255, 255, 255, 0.829);
-    
-    
+    box-shadow: 8px -5px rgba(238, 238, 235, 0.829);
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: #fff;
 }
+
+.container-single img:hover{
+    content: '';
+    background: rgba(230, 221, 221, 0.8);
+    z-index: 1;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
+}
+
+
+
+
+
 
 /* footer */
 .footer {
@@ -262,88 +290,4 @@ html, body {
     color: #fff;
     background-color:#462663; 
     
-}
-
-/* responsivo */
-@media screen and (max-width: 1024px) {
-    .header {
-        height: auto;
-        width: 100%;
-        padding: 15px 0;
-        text-align: center;
-    }
-
-    .header img {
-        margin: 0;
-    }
-
-    .container-list {
-        padding: 30px 0;
-        width: 40%;
-        /* margin-top: 30px; */
-        float: left;
-        display: inline-block;
-        max-width: 500px;
-      
-        height: auto;
-       
-    }
-
-    .container-banner {
-        width: 100%;
-        padding: 40 2%;
-        height: auto;
-        text-align: center;
-        
-    }
-
-
-    .form {
-        max-width: 400px;
-        margin-top: 30px;
-        padding: 10px;
-        width: 60%;
-        height: 100%;
-        display: inline-block;
-        float: right;
-        
-        top: 0;
-     
-       
-    }
-
-    .input-container input[type=text] {
-        width: 100%;
-        height: 55px;
-    }
-
-    .form input [type=submit] {
-        min-width: 280px;
-        height: 56px;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .container-list {
-        margin-top: 0;
-        float: none;
-        display: inline-block;
-        width: 100%;
-    }
-
-    .form {
-        float: none;
-        display: inline-block;
-        width: 90%;
-    }
-
-    .container-single {
-        float: none;
-        display: inline-block;
-        width: 100%;
-        max-width: 600px;
-        padding: 30px 0; 
-    }
-
 }

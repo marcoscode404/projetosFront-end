@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.header {
+    width: 100%;
+    height: 40vh;
+    max-height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+
+.header video {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translatey(-50%); /*para centralizar*/
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    transition: 0.7ms;
+    background: rgba(5, 2, 2, 0.486);
+}
+
+.overlay:hover {
+    background: rgba(0, 0, 0, 0.657);
+}
+
+.overlay h2 {
+    padding: 20px 0;
+    text-align: center;
+    color: wheat;
+    font-size: 50px;
+}
+
+
+
+.center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box {
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+
+.box img {
+    width: 100px;
+    height: 100px;
+    animation-name: animacao_1;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    
+    
+}
+
+
+
+.blocos {
+   width: 100%;
+   height: 50px;
+   border: 1px solid red;
+   background-color: rgba(230, 14, 14, 0.767); 
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+}
+
+.bloco1 {
+    width: 100%;
+    height: 100%;
+    /* background-color: royalblue; */
+    animation-name: animacao_2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    /* animation-iteration-count: infinite; */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.bloco1 h2 {
+    text-align: center;
+    /* border: 1px solid red; */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+
+
+
+@keyframes animacao_1 {
+    0% {
+        width: 100px;
+        height: 100px;
+   
+    }
+
+    50% {
+        width: 200px;
+        height: 200px;
+        box-shadow: 1px 1px 1px #fff;
+        
+    }
+
+    100% {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@keyframes animacao_2 {
+    0% {
+        margin-left: 10%;
+    }
+
+    50% {
+        margin-right: 10%;
+        
+    }
+   
+}
+
+
+
+
+.arrombadora {
+    height: 1000px;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+}
