@@ -88,12 +88,14 @@ header  .logo{
     position: relative;
     top: -10px;
     float: left;
-    width: 160px;
+    width: 300px;
     height: 40px;
-    background-image: url('../imagens/logo-danki.png');
+    /* background-image: url('../imagens/logo-danki.png'); */
+    color: rgb(211, 224, 20);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
     
 }
@@ -111,10 +113,14 @@ header nav.desktop-menu li{
 
 header nav.desktop-menu li a{
     text-decoration: none;
-    color: #eea506;
+    color: #d9f00e;
     font-size: 19px;
-    border-bottom: 1px solid rgb(209, 199, 198);
+    border-bottom: 1px solid rgb(214, 197, 195);
     
+}
+
+header nav.desktop-menu li a:hover{
+    color: rgb(10, 198, 245);
 }
 
 
@@ -129,26 +135,23 @@ header nav.desktop-menu li a{
 
 .chamada1 h2{
     font-weight: 200;
-    color: rgb(188, 226, 19);
+    color: rgb(220, 223, 215);
+    background-color: #086ac5;
     font-weight: normal;
     border-bottom: 1px solid rgba(243, 237, 237, 0.514);
+    text-align: center;
     
 }
 
 .chamada1 p{
     font-size: 17px;
-    color: rgb(7, 26, 7);
+    color: rgb(241, 241, 241);
     margin-top: 10px;
-    background-color: #ccc;
+    background-color: #086ac5;
+    text-align: center;
+    
   
 }
-
-.chamada1 p span{
-    color: rgb(35, 8, 187);
-    
-}
-
-
 
 
 
