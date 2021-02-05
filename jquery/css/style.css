@@ -9,5 +9,8 @@ html, body{
 }
 
 .box{
-    height: 3000px;
+    width: 10px auto;
+    text-align: center;
+    margin: 50px;
+    background-color: #ccc;
 }

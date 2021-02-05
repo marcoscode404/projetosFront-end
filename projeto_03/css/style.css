@@ -301,10 +301,21 @@ section.sessao1 .container{
     background: rgba(204, 204, 204, 0.109);
 }
 
+.scrollEquipe{
+    min-width: 600px;
+    padding-left: 15px;
+    overflow: hidden;
+}
+
+.scroll-wraper{
+    width:100%;
+}
+
+
 .sobre-autor{
     float: left;
-    max-width: 600px;
     padding-left: 30px;
+    padding: 0 20px;
    
 }
 
@@ -366,7 +377,7 @@ section.sessao1 .container{
 .slider-bullets{
     width: 100%;
     float: left;
-    padding-left: 30px;
+    padding-left: 38px;
     margin-top: 12px;
 }
 
