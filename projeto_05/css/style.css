@@ -633,14 +633,15 @@ section.venda-single .container{
 }
 
 .nav-galeria-wraper{
-	width: 200%;
+	
 }
 
 .mini-img-wraper{
 	float: left;
 	padding:9px;
-	width:calc(33.3% * (100 / 200));
+
 }
+
 
 .mini-img{
 	width: 100%;
@@ -650,6 +651,8 @@ section.venda-single .container{
 	background-size: cover;
 	background-color:green;
 }
+
+
 
 section.sobre{
 	min-height: 90%;
