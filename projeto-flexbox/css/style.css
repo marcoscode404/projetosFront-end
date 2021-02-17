@@ -153,3 +153,100 @@ nav a:hover{
     background-color: antiquewhite;
     color: rgb(15, 119, 189);
 }
+
+
+/* section sidebar */
+#geral{
+    display: flex;
+    justify-content: center;
+}
+
+#geral section{
+    flex: 2;
+}
+
+#geral aside{
+    flex: 1;
+}
+
+.widget_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget_title_text{
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+    
+}
+
+.widget_title_bar{
+    width: 50px;
+    height: 2px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+}
+
+.horario1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.342);
+}
+
+.horario2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.342);
+}
+
+
+.caixas{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.caixas1{
+    width: 155px;
+    height: 155px;
+    margin-bottom: 15px;
+    background-color: #36a9e1;
+}
+
+.widget_body h4{
+    text-align: justify;
+    color: #000000;
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+
+/* contato */
+.contato{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(204, 204, 204, 0.342);
+    margin-bottom: 10px;
+    /* background-color: red; */
+}
+
+.contato img{
+    margin-right: 5px;
+}
+
+
+
+
+.espaco{
+    padding: 100px;
+    background-color: rgb(10, 9, 9);
+   
+}
