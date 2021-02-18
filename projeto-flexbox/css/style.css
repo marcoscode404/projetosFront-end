@@ -236,12 +236,18 @@ nav a:hover{
     border-bottom: 2px solid rgba(204, 204, 204, 0.342);
     margin-bottom: 10px;
     /* background-color: red; */
+    
 }
 
 .contato img{
     margin-right: 5px;
+    text-decoration: none;
 }
 
+.contato a{
+    text-decoration: none;
+    color: rgb(17, 92, 161);
+}
 
 
 
