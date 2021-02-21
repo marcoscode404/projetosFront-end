@@ -28,17 +28,25 @@ header{
     color: #727272;
     text-transform: uppercase;
     
+    
+}
+.logo h2{
+    border-bottom: 2px solid rgb(209, 88, 88);
+    padding-bottom: 12px;
 }
 
 
 .menu{
     display: flex;
     align-items: center;
+   
 }
 
 nav ul,
 nav li{
     list-style: none;
+    /* background-color: red; */
+    margin-right: 5px;
 }
 
 nav ul{
@@ -65,7 +73,7 @@ nav a:hover{
 #banner {
     display: flex;
     justify-content: center;
-    background-image: url('../img/banner4.png');
+    background-image: url('../img/banner5.png');
     background-position: center;
     background-size: cover;
     height: 670px;
@@ -103,6 +111,7 @@ nav a:hover{
 
 .banner_options{
     height: 210px;
+    
 }
 
 
@@ -110,6 +119,7 @@ nav a:hover{
 .banner_options{
     height: 210px;
     display: flex;
+    
 }
 
 .banner1,
@@ -160,6 +170,7 @@ nav a:hover{
 #geral{
     display: flex;
     justify-content: center;
+    background-color: #181A1B;
 }
 
 #geral section{
@@ -176,7 +187,7 @@ nav a:hover{
 }
 
 .widget_title_text{
-    color: #000000;
+    color: #32b36b;
     font-size: 21px;
     font-weight: bold;
     
@@ -221,7 +232,7 @@ nav a:hover{
 
 .widget_body h4{
     text-align: justify;
-    color: #000000;
+    color: #ebe2e2;
     font-weight: normal;
     font-size: 15px;
     margin-bottom: 50px;
@@ -243,11 +254,16 @@ nav a:hover{
 .contato img{
     margin-right: 5px;
     text-decoration: none;
+    
 }
 
 .contato a{
     text-decoration: none;
     color: rgb(17, 92, 161);
+}
+
+.horario{
+    color: #d9e2e9;
 }
 
 
@@ -304,7 +320,7 @@ article .news_thumnail img{
 article .news_title{
     margin-top: 25px;
     margin-bottom: 25px;
-    color: #000000;
+    color: #32b36b;
     font-size: 23px;
 }
 
@@ -354,6 +370,7 @@ footer{
 
 .footer_area{
     display: flex;
+    
 }
 
 .footer_areaitem{
@@ -363,4 +380,104 @@ footer{
 
 .flexColumn{
     flex-direction: column;
+}
+
+footer .widget_title_text {
+    color: #fff;
+}
+
+.footer_copy{
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+   
+    margin-top: 30px;
+
+}
+
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line{
+    height: 3px;
+    background-color: rgb(61, 156, 52);
+}
+
+/* responsividade */
+@media (max-width:600px){
+    .banner_headline{
+        padding: 20px;
+    }
+    .banner_headline h1{
+        font-size: 55px;
+    }
+    .banner_headline h2{
+        font-size: 17px;
+    }
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    #geral section,
+    #geral aside{
+        padding: 30px;
+    }
+
+    /* FOOTER */
+    .footer_menu{
+        flex-direction: column;
+    }
+
+    .footer_area{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer_copy {
+        padding-left: 20px;
+    }
+
+    /* header ao normal */
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        margin-top: 20px;
+        background-color: rgb(24, 27, 24);
+        
+    }
+
+    header{
+        height: auto; /*aumenta o tamanho do header*/
+    }
+    
+    .logo{
+        padding-left: 20px;
+    }
+
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
