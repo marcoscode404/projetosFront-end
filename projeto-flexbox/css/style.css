@@ -1,42 +1,51 @@
+/* configurações gerais */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial;
 }
+
+
+:root {
+    --background-geral: #121214
+    --cor-branca: #fff;
+    --cor-laranja: #e08e22;
+    --cor-header: #202024;
+    --cor-verde-escuro: rgb(45, 90, 31);
+    --cor-text: #727272;
+    --cor-text-azul: #36a9e1;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
 /* configurações gerais */
 
 header{
     display: flex;
     justify-content: center;
-    height: 120px;
-    background-color: #1d2331;
+    height: 5rem;
+    background-color:  #2b4c99;
+    border-bottom: 1px solid rgb(45, 90, 31);
 }
 
-.container{
-    display: flex;
-    justify-content: space-between;
-    width: 990px;
-    
-    
-}
 
-.logo{
+
+header .logo{
     display: flex;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: #727272;
+    color: #fff;
     text-transform: uppercase;
-    
-    
-}
-.logo h2{
-    border-bottom: 2px solid rgb(209, 88, 88);
-    padding-bottom: 12px;
+    font-size: 1rem;
 }
 
 
-.menu{
+
+header .menu{
     display: flex;
     align-items: center;
    
@@ -58,16 +67,15 @@ nav a{
     padding: 15px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    color: #727272;
+    color: var(--cor-text);
     text-transform: uppercase;
 
 }
 
 nav .active a,
 nav a:hover{
-    /* background-color: #206b37; */
     color: #fff;
-    border-bottom: 2px solid rgb(209, 88, 88);
+    
 }
 
 #banner {
@@ -76,7 +84,7 @@ nav a:hover{
     background-image: url('../img/banner5.png');
     background-position: center;
     background-size: cover;
-    height: 670px;
+    height: 690px;
 }
 
 .column{
@@ -162,7 +170,7 @@ nav a:hover{
 
 .banner_options a:hover{
     background-color: antiquewhite;
-    color: rgb(15, 119, 189);
+    color: var(--cor-text-azul);
 }
 
 
@@ -170,7 +178,7 @@ nav a:hover{
 #geral{
     display: flex;
     justify-content: center;
-    background-color: #181A1B;
+    background-color: #1e20221f;
 }
 
 #geral section{
@@ -196,7 +204,7 @@ nav a:hover{
 .widget_title_bar{
     width: 50px;
     height: 2px;
-    background-color: #36a9e1;
+    background-color: var(--cor-text-azul);
     margin-top: 10px;
 }
 
@@ -227,15 +235,16 @@ nav a:hover{
     width: 155px;
     height: 155px;
     margin-bottom: 15px;
-    background-color: #36a9e1;
+    background-color: #ccc;
 }
 
 .widget_body h4{
     text-align: justify;
-    color: #ebe2e2;
+    color: #3d3bc7;
     font-weight: normal;
     font-size: 15px;
     margin-bottom: 50px;
+    font-family: serif;
 }
 
 
@@ -259,11 +268,11 @@ nav a:hover{
 
 .contato a{
     text-decoration: none;
-    color: rgb(17, 92, 161);
+    color: var(--cor-text-azul);
 }
 
 .horario{
-    color: #d9e2e9;
+    color: var(--cor-text-azul);
 }
 
 
